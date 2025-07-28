@@ -1,11 +1,3 @@
-**_tl;dr_**
-
-- _General_ - options are always at the top of scripts, all configuration dataclasses are entirely documented (see `config.py`). Variables are designated by their names, which get resolved internally to ids using the key generated during preprocessing.
-- _Data_ - Set the paths for the two review `.xlsx` files at the top of `preprocess_all_var.py`, run it, then run `culling.reg` with the desired config.
-- _Training and Eval_ - Adjust the configs, make sure you culled the dataset, and run `kfold_TMITS.py` followed by `eval_kfold_TMITS.py`
-
----
-
 # T-MITS
 
 This repository is the official implementation for _Multivariable Serum Creatinine Forecasting for Acute Kidney Injury Detection Using an Explainable Transformer-based Model_, by [Cyprien Gille](mailto:cyprien.gille@umons.ac.be), Galaad Altares, Benjamin Colette, Karim Zouaoui Boudjeltia, Matei Mancas and Virginie Vandenbulcke (EMBC 2025).
