@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: T-MITS
+message: >-
+  If you use this software, please cite the original
+  EMBC article.
+type: software
+authors:
+  - given-names: Cyprien
+    family-names: Gille
+    email: cyprien.gille@umons.ac.be
+    affiliation: "ISIA Lab, UMONS"
+    orcid: "https://orcid.org/0000-0003-1974-1039"
+repository-code: "https://github.com/CyprienGille/T-MITS"
+abstract: >-
+  Official code for the Transformer for Multivariate
+  Irregular Time Series (T-MITS)
+version: 1.0.0
+date-released: 2025-07-14
+license: CC-BY-NC-SA-4.0
+preferred-citation:
+  type: proceedings
+  authors:
+    - family-names: "Gille"
+      given-names: "Cyprien"
+      affiliation: "ISIA Lab, UMONS"
+      orcid: "https://orcid.org/0000-0003-1974-1039"
+    - family-names: "Altares"
+      given-names: "Galaad"
+      affiliation: "Multitel Research Institute"
+    - family-names: "Colette"
+      given-names: "Benjamin"
+      affiliation: "ULB/LME"
+    - family-names: "Zouaoui-Boudjeltia"
+      given-names: "Karim"
+      affiliation: "ULB/LME"
+    - family-names: "Mancas"
+      given-names: "Matei"
+      affiliation: "ISIA Lab, UMONS"
+    - family-names: "Vandenbulcke"
+      given-names: "Virginie"
+      affiliation: "ISIA Lab, UMONS"
+  conference: "2025 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)"
+  start: 1 # First page number
+  end: 7 # Last page number
+  title: "Multivariable Serum Creatinine Forecasting for Acute Kidney Injury Detection Using an Explainable Transformer-based Model"
+  year: 2025
+  # doi: ""
