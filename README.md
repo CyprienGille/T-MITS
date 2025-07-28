@@ -163,7 +163,9 @@ You can also call this script's `main` function with a path to a culled cohort a
 
 # Reference
 
-The _bibtex_ reference to our paper will be added here and as a CITATION file after publication of the EMBC proceedings.
+If the code in this repository has been useful to you, please cite the original article using the `Cite this repository` button (Located in the top right of the GitHub page, above Releases).
+
+The reference to our paper will be updated with the DOI of the article after publication of the EMBC proceedings.
 
 # License
 
