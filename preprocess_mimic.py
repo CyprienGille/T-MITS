@@ -33,7 +33,7 @@ data_dir = "../mimic-iv-2.2/"
 output_dir = "generated/"
 # False means bottom-up (hand-picked 29 variables)
 # True means top-down (frequency-based 206 variables)
-top_down = True
+top_down = False
 
 # Whether to load all of chartevents.csv in memory at once (Faster, needs enough RAM)
 # If False, loads it by streaming only the needed lines for each item (Can be much slower, needs less RAM)
@@ -59,6 +59,8 @@ else:
     min_measures, max_measures = 10, 5000
 
 if __name__ == "__main__":
+    os.makedirs(output_dir, exist_ok=True)
+
     all_dfs_list = []
 
     if load_once:
@@ -145,7 +147,9 @@ if __name__ == "__main__":
         .filter(pl.col("count").is_between(min_measures, max_measures, closed="both"))
     )
 
-    df_ev_hadm = df_ev_hadm.filter(pl.col("ind").is_in(to_keep_inds.select("ind").to_numpy().flatten()))
+    df_ev_hadm = df_ev_hadm.filter(
+        pl.col("ind").is_in(to_keep_inds.select("ind").to_numpy().flatten())
+    )
 
     # Add demographic data
     print("Adding demographic data...")
