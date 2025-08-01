@@ -33,7 +33,7 @@ data_dir = "../mimic-iv-2.2/"
 output_dir = "generated/"
 # False means bottom-up (hand-picked 29 variables)
 # True means top-down (frequency-based 206 variables)
-top_down = False
+top_down = True
 
 # Whether to load all of chartevents.csv in memory at once (Faster, needs enough RAM)
 # If False, loads it by streaming only the needed lines for each item (Can be much slower, needs less RAM)

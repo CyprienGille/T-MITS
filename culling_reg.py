@@ -24,11 +24,11 @@ from utility_functions.utils import get_id_from_label, string_to_thresholding
 
 # This config will be saved (as json) along the culled csv for experiment tracking purposes
 cfg = CullingConfig(
-    data_path="generated/29.csv",
-    key_path="generated/mimic_BU_key.csv",
-    out_path="generated/29_culled.csv",
-    tgt_var_label="Creatinine (serum)",
-    skippable_vars_labels=["Creatinine (serum)"],
+    data_path="generated/eicu.csv",
+    key_path="generated/eicu_key.csv",
+    out_path="generated/eicu_culled.csv",
+    tgt_var_label="creatinine",
+    skippable_vars_labels=["creatinine"],
     must_include_labels=None,
     must_exclude_labels=None,
     kept_entry_stages=None,
