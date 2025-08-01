@@ -302,13 +302,22 @@ def main(cfg: TrainingConfig) -> None:
             )
 
     try:
-        for fold_i, (train_idx, test_idx) in enumerate(folds_iterator):
+        for fold_i, (train_indices, test_indices) in enumerate(folds_iterator):
             if cfg.resume and fold_i < cfg.n_completed_folds:
                 # if we're resuming and this fold has already been completed, skip to next fold
                 logger.info(f"Skipped fold {fold_i} as {cfg.n_completed_folds=}")
                 continue
 
             logger.info(f"Starting fold {fold_i}/{cfg.n_folds - 1}")
+
+            if cfg.n_folds > 1:
+                # The KFold generator gives indices, we need to convert them to stay indexes
+                train_idx = train_ds.indexes[train_indices]
+                test_idx = train_ds.indexes[test_indices]
+            else:
+                # train_test_split already splits the actual stay indexes array
+                train_idx = train_indices
+                test_idx = test_indices
 
             # Save indexes for inference (e.g. evaluation scripts) later
             np.save(f"{saving_path}T_MITS_train_idx_{fold_i}.npy", train_idx)
@@ -473,13 +482,16 @@ def main(cfg: TrainingConfig) -> None:
 
         logger.info("***END***")
 
+        stopped = False
+
     except KeyboardInterrupt:
         # Exit cleanly, and log the progress to facilitate resuming
         logger.info(
             f"KeyboardInterrupt. Completed {fold_i} folds, completed {epoch} epochs in current fold"
         )
+        stopped = True
 
-    if cfg.do_eval_after:
+    if cfg.do_eval_after and not stopped:
         eval(
             EvalConfig(
                 exp_name=cfg.exp_name,
