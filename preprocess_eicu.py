@@ -28,6 +28,8 @@ def get_item_from_lab(df: pl.DataFrame, variable: str):
 
 
 if __name__ == "__main__":
+    os.makedirs(output_dir, exist_ok=True)
+
     print("Loading and filtering labs data, removing outliers...")
     df_lab_orig = pl.read_csv(
         data_dir + "lab.csv",
