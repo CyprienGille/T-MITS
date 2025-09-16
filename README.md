@@ -29,6 +29,7 @@ All relevant files should have a docstring at the top and extensive comments to 
 | utility_functions/eval_utils.py          | Utility functions used for evaluation                                                                |     No      |
 | utility_functions/preprocessing_utils.py | Utility functions used for preprocessing (includes the pre-selected variables for preprocessing)     |     No      |
 | utility_functions/utils.py               | Various utility functions                                                                            |     No      |
+| results/\*                               | Trained model checkpoints and evaluation metrics                                                     |     No      |
 
 # Installing
 
@@ -152,14 +153,29 @@ This will reuse the saved training config to evaluate the trained model.
 
 If all config booleans are set to True, this will produce (for the train set and the test set):
 
-- Regression and classification metrics (`.csv`)
-- Normalized confusion matrices
-- Ground truth and Predicted value arrays, both for regression and for classification (`.npy`) (aligned with the stay indexes saved during training right after splitting)
+- Regression and classification metrics (`.csv`),
+- Normalized confusion matrices,
+- Ground truth and Predicted value arrays, both for regression and for classification (`.npy`) (aligned with the stay indexes saved during training right after splitting),
 - An `.xlsx` sheet with columns for the stay id, the true and predicted values, and the true and predicted classes.
 
 ### Decoupled Evaluation Data
 
 You can also call this script's `main` function with a path to a culled cohort as the `data_override` argument: this allows for the evaluation of a model on a _different_ cohort than the one it was trained on (for example, train on stays that started in stage 0, and evaluate on stays that ended in stages 1 2 or 3). Note however that if none of the test indexes used during the training process are in the overriding cohort, the script will raise an error.
+
+# Using Trained Model Checkpoints
+
+To promote ease of use and reproducibility, we provide the full outputs of our training and evaluation pipelines in the `results` folder. As such, you will find for each experiment (i.e. in each subfolder) the following files:
+
+- `T_MITS_[X].pth` files: best model checkpoint from training fold `X`.
+- `T_MITS_config.json`: serialized configuration object used for training this experiment.
+- `T_MITS_[train/test]_idx_[X].npy` files: stay indices used for the train/test split for fold `X`, saved in binary using `numpy.save`.
+- `confusion_test.png`: Confusion matrix on the test set of the first fold.
+- `metrics_test.csv`: Evaluation metrics on the test sets of all folds.
+- `true_pred_values_test_[X].xlsx` files: Ground truths and predicted values and classes for each stay in the test set of fold `X`.
+- `arrays/`: Numpy arrays of all values (ground truths and predicted) for the test sets of all folds.
+- `arrays_classif/`: Numpy arrays of all classes (ground truths and predicted) for the test sets of all folds.
+
+Note: the order of the stays (as dictated by the indexes (`idx` files) and as reported in the `.xlsx` files) is consistent throughout all numpy arrays.
 
 # Reference
 

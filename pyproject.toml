@@ -1,18 +1,18 @@
 [project]
 name = "T-MITS"
-version = "1.0.0"
+version = "1.0.1"
 description = ""
 readme = "README.md"
 requires-python = "~=3.12.11"
 dependencies = [
-    "matplotlib>=3.10.3",
-    "numpy>=2.2.6",
-    "pandas[performance]>=2.2.3",
-    "polars[calamine,numpy]>=1.30.0",
-    "scikit-learn>=1.6.1",
-    "torch>=2.7.0",
-    "tqdm>=4.67.1",
-    "xlsxwriter>=3.2.5",
+    "matplotlib==3.10.3",
+    "numpy==2.2.6",
+    "pandas[performance]==2.2.3",
+    "polars[calamine,numpy]==1.31.0",
+    "scikit-learn==1.6.1",
+    "torch==2.7.1",
+    "tqdm==4.67.1",
+    "xlsxwriter==3.2.5",
 ]
 
 [tool.uv.sources]
