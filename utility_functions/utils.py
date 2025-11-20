@@ -1,4 +1,7 @@
-"""Various utility functions."""
+"""
+© University of Mons, 2025
+Various utility functions.
+"""
 
 
 def denorm(val, mean: float, std: float) -> float:

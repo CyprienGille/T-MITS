@@ -1,4 +1,5 @@
 """
+© University of Mons, 2025
 Performs training of a T_MITS model (optionally with cross-validation).
 
 Note: at the moment, we use stratified train/test spliting by default when n_folds==1

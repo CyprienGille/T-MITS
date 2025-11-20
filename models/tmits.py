@@ -1,3 +1,7 @@
+"""
+© University of Mons, 2025
+"""
+
 from math import sqrt
 
 import torch

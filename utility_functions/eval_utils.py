@@ -1,4 +1,7 @@
-"""Utility functions used for evaluating models"""
+"""
+© University of Mons, 2025
+Utility functions used for evaluating models
+"""
 
 import pandas as pd
 from numpy import ndarray

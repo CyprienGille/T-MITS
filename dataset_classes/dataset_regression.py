@@ -1,3 +1,7 @@
+"""
+© University of Mons, 2025
+"""
+
 import pandas as pd
 from torch import Tensor, cat, float32, ones_like, tensor
 from torch.nn.utils.rnn import pad_sequence

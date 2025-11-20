@@ -1,4 +1,7 @@
-"""Evaluates a trained T-MITS model."""
+"""
+© University of Mons, 2025
+Evaluates a trained T-MITS model.
+"""
 
 import json
 from os import makedirs

@@ -1,4 +1,5 @@
 """
+© University of Mons, 2025
 Preprocess eICU data.
 
 Parameters to control the output of this script are at the start of it.

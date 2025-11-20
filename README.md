@@ -185,4 +185,4 @@ The reference to our paper will be updated with the DOI of the article after pub
 
 # License
 
-The code in this repository is available under a [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Creative Commons Attribution-ShareAlike 4.0 International Public License) [license](LICENSE.md).
+The code in this repository is available under a [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) [license](LICENSE.md).

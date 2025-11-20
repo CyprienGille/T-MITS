@@ -1,4 +1,5 @@
 """
+© University of Mons, 2025
 This script removes from a given preprocessed .csv :
     - Sections of each stay that are after the last observation of the target variable
     (since this last obs will be used as the regression target)

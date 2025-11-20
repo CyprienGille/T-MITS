@@ -1,4 +1,7 @@
-"""Several utility variables and functions for preprocessing data."""
+"""
+© University of Mons, 2025
+Several utility variables and functions for preprocessing data.
+"""
 
 import polars as pl
 

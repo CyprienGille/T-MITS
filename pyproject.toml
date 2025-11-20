@@ -4,6 +4,7 @@ version = "1.0.1"
 description = ""
 readme = "README.md"
 requires-python = "~=3.12.11"
+license-files = ["LICENSE.md"]
 dependencies = [
     "matplotlib==3.10.3",
     "numpy==2.2.6",

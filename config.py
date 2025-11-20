@@ -1,4 +1,6 @@
-"""Various Config classes: dataclasses containing all the adjustable parameters for a given script.
+"""
+© University of Mons, 2025
+Various Config classes: dataclasses containing all the adjustable parameters for a given script.
 
 All configs are serializable to JSON if they inherit from SavableConfig.
 """

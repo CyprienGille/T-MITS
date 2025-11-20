@@ -1,3 +1,7 @@
+"""
+© University of Mons, 2025
+"""
+
 from torch import nn
 
 
