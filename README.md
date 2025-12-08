@@ -4,6 +4,26 @@ This repository is the official implementation for _[Multivariable Serum Creatin
 
 ![Diagram of the T-MITS architecture](images/T-MITS-diagram-medical.png)
 
+## Reference
+
+If the code in this repository has been useful to you, please cite the original article using the `Cite this repository` button (Located in the top right of the GitHub page, above Releases).
+
+You can also cite the article directly using the reference below.
+
+```
+@inproceedings{gilleMultivariableSerumCreatinine2025,
+  title = {Multivariable {{Serum Creatinine Forecasting}} for {{Acute Kidney Injury Detection Using}} an {{Explainable Transformer-based Model}}},
+  booktitle = {2025 47th {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine}} and {{Biology Society}} ({{EMBC}})},
+  author = {Gille, Cyprien and Altares, Galaad and Colette, Benjamin and Boudjeltia, Karim Zouaoui and Mancas, Matei and Vandenbulcke, Virginie},
+  year = 2025,
+  month = jul,
+  pages = {1--7},
+  issn = {2694-0604},
+  doi = {10.1109/EMBC58623.2025.11251723},
+  keywords = {Accuracy,Forecasting,Injuries,Kidney,Mortality,Predictive models,Prognostics and health management,Time series analysis,Transformers,Usability}
+}
+```
+
 ## Repository Contents
 
 All relevant files should have a docstring at the top and extensive comments to tell you what they do, but you can find an overview of the contents of this repository below.
@@ -176,26 +196,6 @@ To promote ease of use and reproducibility, we provide the full outputs of our t
 - `arrays_classif/`: Numpy arrays of all classes (ground truths and predicted) for the test sets of all folds.
 
 Note: the order of the stays (as dictated by the indexes (`idx` files) and as reported in the `.xlsx` files) is consistent throughout all numpy arrays.
-
-# Reference
-
-If the code in this repository has been useful to you, please cite the original article using the `Cite this repository` button (Located in the top right of the GitHub page, above Releases).
-
-You can also cite the article directly using the reference below.
-
-```
-@inproceedings{gilleMultivariableSerumCreatinine2025,
-  title = {Multivariable {{Serum Creatinine Forecasting}} for {{Acute Kidney Injury Detection Using}} an {{Explainable Transformer-based Model}}},
-  booktitle = {2025 47th {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine}} and {{Biology Society}} ({{EMBC}})},
-  author = {Gille, Cyprien and Altares, Galaad and Colette, Benjamin and Boudjeltia, Karim Zouaoui and Mancas, Matei and Vandenbulcke, Virginie},
-  year = 2025,
-  month = jul,
-  pages = {1--7},
-  issn = {2694-0604},
-  doi = {10.1109/EMBC58623.2025.11251723},
-  keywords = {Accuracy,Forecasting,Injuries,Kidney,Mortality,Predictive models,Prognostics and health management,Time series analysis,Transformers,Usability}
-}
-```
 
 # License
 
