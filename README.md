@@ -1,6 +1,6 @@
 # T-MITS
 
-This repository is the official implementation for _Multivariable Serum Creatinine Forecasting for Acute Kidney Injury Detection Using an Explainable Transformer-based Model_, by [Cyprien Gille](mailto:cyprien.gille@umons.ac.be), Galaad Altares, Benjamin Colette, Karim Zouaoui Boudjeltia, Matei Mancas and Virginie Vandenbulcke (EMBC 2025).
+This repository is the official implementation for _[Multivariable Serum Creatinine Forecasting for Acute Kidney Injury Detection Using an Explainable Transformer-based Model](https://doi.org/10.1109/EMBC58623.2025.11251723)_, by [Cyprien Gille](mailto:cyprien.gille@umons.ac.be), Galaad Altares, Benjamin Colette, Karim Zouaoui Boudjeltia, Matei Mancas and Virginie Vandenbulcke (EMBC 2025).
 
 ![Diagram of the T-MITS architecture](images/T-MITS-diagram-medical.png)
 
@@ -181,7 +181,21 @@ Note: the order of the stays (as dictated by the indexes (`idx` files) and as re
 
 If the code in this repository has been useful to you, please cite the original article using the `Cite this repository` button (Located in the top right of the GitHub page, above Releases).
 
-The reference to our paper will be updated with the DOI of the article after publication of the EMBC proceedings.
+You can also cite the article directly using the reference below.
+
+```
+@inproceedings{gilleMultivariableSerumCreatinine2025,
+  title = {Multivariable {{Serum Creatinine Forecasting}} for {{Acute Kidney Injury Detection Using}} an {{Explainable Transformer-based Model}}},
+  booktitle = {2025 47th {{Annual International Conference}} of the {{IEEE Engineering}} in {{Medicine}} and {{Biology Society}} ({{EMBC}})},
+  author = {Gille, Cyprien and Altares, Galaad and Colette, Benjamin and Boudjeltia, Karim Zouaoui and Mancas, Matei and Vandenbulcke, Virginie},
+  year = 2025,
+  month = jul,
+  pages = {1--7},
+  issn = {2694-0604},
+  doi = {10.1109/EMBC58623.2025.11251723},
+  keywords = {Accuracy,Forecasting,Injuries,Kidney,Mortality,Predictive models,Prognostics and health management,Time series analysis,Transformers,Usability}
+}
+```
 
 # License
 

@@ -1,6 +1,6 @@
 [project]
 name = "T-MITS"
-version = "1.0.2"
+version = "1.0.3"
 description = "Official repository for the Transformer for Multivariate Irregular Time Series (T-MITS)."
 readme = "README.md"
 requires-python = "~=3.12.11"

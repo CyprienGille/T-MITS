@@ -14,9 +14,9 @@ repository-code: "https://github.com/CyprienGille/T-MITS"
 abstract: >-
   Official code for the Transformer for Multivariate
   Irregular Time Series (T-MITS)
-version: 1.0.0
-date-released: 2025-07-14
-license: CC-BY-NC-SA-4.0
+version: 1.0.3
+date-released: 2025-12-08
+license: GPL-3.0-only
 preferred-citation:
   type: proceedings
   authors:
@@ -44,4 +44,5 @@ preferred-citation:
   end: 7 # Last page number
   title: "Multivariable Serum Creatinine Forecasting for Acute Kidney Injury Detection Using an Explainable Transformer-based Model"
   year: 2025
-  # doi: ""
+  month: 7
+  doi: "10.1109/EMBC58623.2025.11251723"
